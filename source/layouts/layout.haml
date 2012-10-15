@@ -1,0 +1,20 @@
+!!! 5
+%html
+  = partial '/partials/head'  
+  %body{:class => page_classes}
+    %section(role="content")
+      = partial '/partials/header'  
+      = yield
+
+    .clear
+    %footer
+      = partial '/partials/footer'  
+
+
+    / %header
+    /   = partial '/partials/header'  
+    
+
+
+  
+  = partial 'partials/script-embed'

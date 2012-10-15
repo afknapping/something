@@ -1,0 +1,66 @@
+// LAYOUT
+// should probably be get its own sass-partial
+// actually, the whole gestalt-thing is great, but should get its own folder and partials. later.
+
+// 
+  okay, tiles. two units wide for mobile, four units for desktop. on widescreen, we stack two blocks with 4 units each.
+
+  tile-units must be used in pairs and quadraples to work for easy floats: a pair of units (or a pair of pairs) must be same height if used in two/four tiles.
+
+  yes, this is hard to describe in words and probably only makes sense when you know the scribble.
+
+// layout
+$tile-unit: 130px
+$base-margin: 10px
+// $tile-unit: 13rem // makes for 300px width = 2 tiles + margin at 15rem
+// $base-margin: 1rem
+
+.tile1
+  width: $tile-unit
+.tile2
+  width: $tile-unit * 2 + 2* $base-margin
+.tile4
+  width: $tile-unit * 2 + 2* $base-margin
+  +above($break-medium)
+    width: $tile-unit * 4 + 6* $base-margin
+  // // @media screen and (max-width: 639px)
+  //   width: $tile-unit * 2 + 2* $base-margin
+
+
+.tile1, .tile2, .tile4
+  margin: $base-margin
+  padding: $base-margin * 2
+  // display: inline-block // unusable: adds word-spacing between objects
+  float: left
+  // margin-right: 1px
+  height: $tile-unit * 1
+  overflow: hidden
+  // -webkit-transition: height .6s ease .6s, background-color .6s ease .6s, width .5s ease .1s
+
+.tile1, .tile2, .tile4
+  background-color: $fg
+  color: $bg
+
+
+
+
+=holder
+  // width: $break-small + 4* $base-margin // sadly does not work because of https://bugs.webkit.org/show_bug.cgi?id=78295 (rem in meadia queries is broken in webkit)
+  width: 300px
+  margin: 0 auto
+  padding: $base-margin
+  @media screen and (min-width: $break-medium)
+    // width: $break-medium + 4* $base-margin 
+    width: 600px
+  // 
+  @media screen and (min-width: $break-wide)
+    //width: $break-large + 4* $base-margin
+    width: 1200px
+  // @media screen and (min-width: $break-wide)
+  //   //width: $break-large + 4* $base-margin
+  //   width: 1200px
+
+header, section[role=content], footer
+  overflow: hidden
+  +holder
+  border: 1px solid red

@@ -1,0 +1,54 @@
+body
+  font-family: $book
+  font-size: 1em
+  background-color: $bg
+  color: $fg
+  // text-shadow: 1px 1px 1px shade($bg, 62%)
+  // text-transform: uppercase
+
+header, section[role=content], footer
+  // border: 1px solid white
+
+a
+  &:link
+    color: $cn1
+    // text-shadow: 1px 1px 1px $bg
+  &:visited
+    color: $cn1
+  &:hover, &:active, &:active
+    // color: $cn1
+    color: scale-lightness($cn1, 62%)
+
+a.button
+  &:link
+    color: #fff
+  &:visited
+    color: #fff 
+  &:hover, &:active, &:active
+    color: #fff
+
+
+h1
+  font-size: 1.45em
+  +above(700px)
+    font-size: 2.3em
+h2
+  font-size: 1.25em
+h3
+  font-size: 1.1em
+h4, h5, h6
+
+
+
+footer
+  border-top: 2px solid $fg
+
+
+
+
+
+
+header
+  h1
+    // +replace-text-with-dimensions('agile-design-camp-2012-logo.png')
+
