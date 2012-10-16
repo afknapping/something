@@ -2,10 +2,10 @@
 %html
   = partial '/partials/head'  
   %body{:class => page_classes}
-    %section(role="content")
+    %header
       = partial '/partials/header'  
+    %section(role="content")
       = yield
-
     .clear
     %footer
       = partial '/partials/footer'  

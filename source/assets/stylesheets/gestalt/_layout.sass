@@ -10,8 +10,8 @@
   yes, this is hard to describe in words and probably only makes sense when you know the scribble.
 
 // layout
-$tile-unit: 130px
-$base-margin: 10px
+$tile-unit: $unit * 12
+$base-margin: $unit
 // $tile-unit: 13rem // makes for 300px width = 2 tiles + margin at 15rem
 // $base-margin: 1rem
 
@@ -29,11 +29,9 @@ $base-margin: 10px
 
 .tile1, .tile2, .tile4
   margin: $base-margin
-  padding: $base-margin * 2
-  // display: inline-block // unusable: adds word-spacing between objects
+  padding: $base-margin
   float: left
-  // margin-right: 1px
-  height: $tile-unit * 1
+  height: $tile-unit * 0.5
   overflow: hidden
   // -webkit-transition: height .6s ease .6s, background-color .6s ease .6s, width .5s ease .1s
 
@@ -41,26 +39,41 @@ $base-margin: 10px
   background-color: $fg
   color: $bg
 
-
+.content
+  display: none
 
 
 =holder
   // width: $break-small + 4* $base-margin // sadly does not work because of https://bugs.webkit.org/show_bug.cgi?id=78295 (rem in meadia queries is broken in webkit)
-  width: 300px
+  width: $tile-unit * 2 + 4 * $base-margin
   margin: 0 auto
-  padding: $base-margin
-  @media screen and (min-width: $break-medium)
-    // width: $break-medium + 4* $base-margin 
-    width: 600px
-  // 
-  @media screen and (min-width: $break-wide)
-    //width: $break-large + 4* $base-margin
-    width: 1200px
-  // @media screen and (min-width: $break-wide)
-  //   //width: $break-large + 4* $base-margin
-  //   width: 1200px
+  +above($break-medium)
+    width: $tile-unit * 4 + 8 * $base-margin
+  +above($break-wide)
+    width: $tile-unit * 8 + 16 * $base-margin
+
 
 header, section[role=content], footer
   overflow: hidden
   +holder
-  border: 1px solid red
+  // border: 1px solid red
+
+header, footer
+  padding: $base-margin * 1
+
+header
+  margin-top: $unit * 2
+  +above($break-medium)
+    margin-top: $unit * 4
+  +above($break-large)
+    margin-top: $unit * 2
+
+  img
+    margin: 0
+
+footer
+  margin-top: $unit * 4
+  .line
+    border-top: 2px solid $fg
+    margin-bottom: $unit
+    

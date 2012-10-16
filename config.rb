@@ -49,7 +49,7 @@
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
-set :images_dir, 'assets/media'
+set :images_dir, 'assets/images'
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true,
@@ -60,10 +60,10 @@ set :markdown, :fenced_code_blocks => true,
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
   # activate :cache_buster
