@@ -1,0 +1,1 @@
+> [Barcamps] are open, participatory workshop-events, the content of which is provided by participants. --[Wikpedia](http://en.wikipedia.org/wiki/BarCamp)

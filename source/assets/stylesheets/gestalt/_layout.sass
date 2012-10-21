@@ -73,7 +73,30 @@ header
 
 footer
   margin-top: $unit * 4
+  text-align: right
   .line
-    border-top: 2px solid $fg
+    border-top: 1px solid $fg
     margin-bottom: $unit
+
+
+#date
+  height: auto
+  +above($break-medium)
+    height: $tile-unit * 0.5
     
+#impressum
+  display: none
+
+#register
+  background-color: $cn1
+
+// IxD stuff
+
+.exp
+  cursor: pointer
+
+.expanded
+  height: auto
+  min-height: $tile-unit * 0.5
+  .content
+    display: block

@@ -13,7 +13,10 @@ $unit: 11px
 
 // colors
 
-$fg: hsla(80, 95%, 50%, 1)
-$bg: hsla(80, 95%, 12%, 1)
-$cn1: hsla(200, 95%, 50%, 1)
-$cn2: hsla(320, 95%, 50%, 1)
+$fg-deg: 91
+
+$fg: hsla($fg-deg, 66%, 40%, 1)
+$bg: darken($fg, 30%)
+
+$cn1: hsla($fg-deg+120, 66%, 40%, 1)
+$cn2: hsla($fg-deg+240, 66%, 40%, 1)

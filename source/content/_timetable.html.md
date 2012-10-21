@@ -1,6 +1,22 @@
 
+### 9h
+Open doors and coffee.
+
 ### 9:30
+Introduction and session planning
 
-#### Room "Agile 42"
+### 10:30, 11:30
 
-##### Lean something ([Sven Kräuter](http://makingthingshappen.com))
+Sessions
+
+### 13h
+
+Lunch
+
+### 14h, 15h, 16h
+
+Sessions
+
+### 17h
+
+Closing and feedback
