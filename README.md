@@ -1,8 +1,7 @@
-# Template for [Middleman](http://middlemanapp.com)
 
-Running haml, sass, compass, etc, yadda yadda.
+# Agile Design Camp Site 2012
 
-put in `~/.middleman`, then do `middleman init --template=ayanami`.
+Uses [Middleman](http://middlemanapp.com).
 
-Powered by [Github pages](http://pages.github.com/), [Middleman](http://middlemanapp.com/), [Compass](http://compass-style.org/), [HAML](http://haml.info/) and [SASS](http://sass-lang.com/).
+After cloning do 'bundle' and start local server with 'middleman'.
 

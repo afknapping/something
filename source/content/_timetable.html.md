@@ -1,22 +1,12 @@
 
-### 9h
-Open doors and coffee.
+**9h:** Open doors and coffee.
 
-### 9:30
-Introduction and session planning
+**9:30:** Introduction and session planning
 
-### 10:30, 11:30
+**10:30, 11:30:** Sessions
 
-Sessions
+**13h:** Lunch
 
-### 13h
+**14h, 15h, 16h:** Sessions
 
-Lunch
-
-### 14h, 15h, 16h
-
-Sessions
-
-### 17h
-
-Closing and feedback
+**17h:** Closing note and feedback

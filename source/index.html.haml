@@ -51,19 +51,50 @@
   .content
     = partial '/content/join'
 
+
+
 .tile4.exp
   %h2 Timetable
   .content
     = partial '/content/timetable'
     
+.tile2#contact
+  =link_to 'Twitter', 'http://twitter.com/agiledesigncamp'
+  \| 
+  =link_to 'Tumblr', 'http://agiledesigncamp.tumblr.com'
+  \|
+  =link_to 'Email', 'mailto:orga_at_agiledesigncamp.org'
+  \| 
+  Lanyrd
+  
+.tile2.exp#team
+  %h2 Team
+  .content
+    %p
+      The Camp is organized by Rike Schmeidebach, Sven Kräuter, Liron Tocker, Matthias Bauer and Fabian Fabian.
+
+.tile2#sessions.exp
+  %h2 Sessions
+  .content
+    %p
+      Can you hold a session?
+      =link_to 'Tell us about it', 'mailto:orga_at_agiledesigncamp.org?subject=Sessionidea'
+      and we will put it right here.
+
+.tile2.exp#kids
+  %h2 Got kids? We got day care!
+  .content
+    %p 
+      Just 
+      =link_to 'tell us how many and what age', 'mailto:orga_at_agiledesigncamp.org?subject=About that day care at the Agile Design Camp'
+      they are.
 
 .tile4#sponsors
-
   %h2 sponsors
   = partial '/content/sponsors'
 
   %p
-    %a{ :href=> "#" } want to sponsor, too?
+    =link_to 'Want to sponsor, too?', 'mailto:orga_at_agiledesigncamp.org?subject=sdsd&body=Hi'
 
 
 
