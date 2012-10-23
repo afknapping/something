@@ -101,5 +101,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  haml
   middleman (~> 3.0.4)
   redcarpet
+  sass
