@@ -1,6 +1,6 @@
 ### Location Sponsor
 
-[![Acando](/assets/images/spoonsorlogos/acando.png)](http://www.acando.com/)
+[![Acando](http://www.acando.com/Global/DE/Logo/Acando_logo_RGB.png)](http://www.acando.com/)
 
 ### Platinum Sponsor
 
