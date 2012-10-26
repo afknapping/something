@@ -4,8 +4,8 @@
 
 ### Platinum Sponsor
 
-[![Otto Group](/assets/images/spoonsorlogos/otto.png)](http://www.otto.com/)
+[![Otto Group](/assets/images/sponsorlogos/otto.png)](http://www.otto.com/)
 
 ### Silver Sponsor
 
-[![Agile 42](/assets/images/spoonsorlogos/agile-42-logo_1_2.png)](http://www.agile42.com/)
+[![Agile 42](/assets/images/sponsorlogos/agile-42-logo_1_2.png)](http://www.agile42.com/)
