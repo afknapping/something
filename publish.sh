@@ -10,76 +10,42 @@ read -p "Show diff? (y/n) " diff
     git diff
   fi
 echo ""
-read -p "commit? (y/n) " commit
-if [ "$commit" == "y" ]; then
+
+# ask for if commit, build and push
+read -p "commit, build and push? (y/n) " cbp
+if [ "$cbp" == "y" ]; then
+  # ask for commit message
   echo ""
   read -p "commit message: " commitmessage
   echo ""
-  git add -A #assuming your .gitignore is configured
-  git commit -m "$commitmessage"
-  read -p "push? (y/n) " push
-  if [ "$push" == "y" ]; then
-    echo ""
-    git push origin #assuming you have pushed your branch to orign
-    echo ""
-  else
-    echo ""
-    echo "comitted, not pushed."
-    echo ""
-  fi
-
-else
-  echo "Not committed."
-  echo ""
-fi
-
-
-
-
-echo ""
-read -p "Build? (y/n) " build
-if [ "$build" == "y" ]; then
-  echo ""
+  # build
   echo "Now building..."
   echo ""
   middleman build
   echo ""
-
+  # commit and push build
   cd build
-  echo ""
-  echo "Build changes:"
-  git s
-  echo ""
-  read -p "Show diff? (y/n) " diff
-  if [ "$diff" == "y" ]; then
-    git diff
-  fi
-  echo ""
-  read -p "commit? (y/n) " commit
-  if [ "$commit" == "y" ]; then
-    echo ""
-    read -p "commit message: " commitmessage
-    echo ""
-    git add -A #assuming your .gitignore is configured
-    git commit -m "$commitmessage"
-
-    read -p "push? (y/n) " push
-    if [ "$push" == "y" ]; then
-      echo ""
-      git push origin #assuming you have pushed your branch to orign
-      echo ""
-    else
-      echo ""
-      echo "built and comitted, not pushed."
-      echo ""
-    fi
-  else
-    echo ""
-    echo "Built but not committed. Bye!"
-    echo ""
-  fi
+  pwd
+  echo "adding files"
+  git add -A #assuming your .gitignore is configured
+  echo "committing"
+  git commit -m "$commitmessage"
+  echo "pushing build"
+  git push origin
+  # commit and push source
+  cd ..
+  pwd
+  echo "adding files"
+  git add -A
+  echo "committing"
+  git commit -m "$commitmessage"
+  echo "pushing source"
+  git push origin
+  echo "DONE."
+  g lg
 else
   echo ""
-  echo "Not built. Bye!"
+  echo "ABORTED."
   echo ""
 fi
+
