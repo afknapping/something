@@ -3,7 +3,7 @@
 [![Acando](http://www.acando.com/Global/DE/Logo/Acando_logo_RGB.png)](http://www.acando.com/)
 
 ---
-### Platinum Sponsor
+### Gold Sponsor
 
 [![Otto Group](/assets/images/sponsorlogos/otto.png)](http://www.otto.com/)
 
