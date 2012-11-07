@@ -1,20 +1,7 @@
-.tile4#date
+.tile.tile4#date
   %h2 Sat, Nov 10 2012. Hamburg, Germany.
 
-
-.copy.tile2.normal.exp#what-is-agile
-  %h2 what is agile?
-  .content
-    = partial '/content/what-is-agile'
-
-
-.copy.tile2.normal.exp#all-of-us
-  %h2 it's about all of us!
-  .content
-    %p When it comes to Agile, the case seems to be clear: It's on everyone's lips. Everyone has an idea what it's about. We all love the attitude. We all believe we practice – at least tiny bits – of it in our day-to-day work life. However, surprisingly few work teams thoroughly live and breathe agile. Especially when it comes to the areas of concept and design, the waterfall is dripping down our processes. 
-
-
-.tile2.exp#location
+.tile.tile2.exp#location
   %h2.large Location
   .content
     %p 
@@ -26,63 +13,101 @@
       Millerntorplatz 1
       %br
       20359 hamburg
-  
+
 %a{:href => "http://agiledesigncamp.wufoo.com/forms/z7x3p9/", :onclick => "window.open(this.href,  null, 'height=937, width=680, toolbar=0, location=0, status=1, scrollbars=1, resizable=1'); return false"}
-  .tile2#register
+  .tile.tile2#register
     %h2.large
       Register
 
-.copy.tile2.normal.exp
-  %h2 what is a barcamp?
+
+.tile.tile4.exp.expanded
+  %h2 letzte informationen (zeitplan / anreise)
   .content
-    = partial '/content/barcamp'
+    :markdown
+      Am Samstag ist es soweit: Das agile design camp geht in die nächste Runde. Daher hier nochmal letzte Informationen und Hinweise:
 
-.copy.tile2.normal.exp
-  %h2 Who should join?
-  .content
-    = partial '/content/join'
+      #### Wenn Du nicht kommen kannst
+      … melde dich bitte ab, damit andere nachrücken können und wir nicht überdimensioniert planen. Eine formlose E-Mail an orga@agiledesigncamp.org genügt.
 
+      #### Falls Du Kinder mitbringen möchtest
+      … teile uns bitte bis Mittwoch mit, wie viele und wie alt diese sind. So können wir die Kinderbetreuung besser organisieren und für alstergerechte Spiezeuge sorgen.
 
+      #### Wenn Du eine Session halten willst
+      … finden wir das großartig. Damit es reibungslos läuft, bedenke, dass die Projektoren bei acando alle VGA-Eingänge haben. Wenn Du also ein Macbook nutzt oder andere Hardware ohne VGA-Ausgang, denke bitte an den passenden Adapter. Alle, die vielleicht nicht unbedingt eine Session halten wollen, aber z.B. MiniDP-auf-VGA-Adapter besitzen, sind herzlich eingeladen, diese mitzubringen. Die Erfahrung zeigt, dass man auf Barcamps nie genug Adapter haben kann.
 
-.tile4.exp
+      #### Zum Zeitplan
+      Ab 8:30 Uhr sind die Türen geöffnet und ihr könnt in Ruhe ankommen, einen Kaffee oder Tee trinken, und noch ein kleines Frühstück nachholen.  
+      Idealerweise solltet ihr um 9 Uhr da sein, damit wir um 9:30 Uhr pünktlich mit der Begrüßung, Einführungsrunde und Sessionplanung loslegen können.  
+      Die erste Session soll dann um 10 Uhr beginnen, jeder Session-Slot dauert eine Stunde (45 Minuten + 15 Minuten Pause).  
+      Ab 12:45 Uhr gibt es Mittagessen, mit den Sessions geht es ab 14 Uhr weiter.  
+      Spätestens um 18 Uhr wird es dann die Abschlussveranstaltung mit Rückblick und Feedbackrunde geben.
+
+      #### Anreise
+      Das Barcamp findet bei acando am Millerntorplatz 1 in Hamburg statt. Die Anreise ist mit dem HVV gut möglich, eure Route könnt ihr euch auf [HVV.de](http://hvv.de/) berechnen. Ihr könnt entweder die Adresse angeben, oder als Zielpunkt die U-Bahn Station St. Pauli (U3) angeben. Der [Millerntorplatz](http://goo.gl/maps/Q9JK1) ist mit einem gigantischen Maredo-Schild bestellt, acando ist in dem großen, modernen Gebäude mit dem dreieckig überdachte Eingang. Wenn ihr das Gebäude durch die Drehtüren betretet, findet ihr die Fahrstühle im hinteren linken Bereich des Foyers. Am Samstag werden dort überall auch großzügig Schilder angebracht sein.
+
+      Wenn Du noch irgendwelche Fragen hast, zögere bitte nicht, sie uns an [orga@agiledesigncamp.org](mailto:orga@agiledesigncamp.org) zu stellen!
+
+.tile.tile4.exp
   %h2 Timetable
   .content
     = partial '/content/timetable'
     
-.tile2#contact
+.tile.tile2#contact
   =link_to 'Twitter', 'http://twitter.com/agiledesigncamp'
   \| 
   =link_to 'Lanyrd', 'http://lanyrd.com/2012/agiledesigncamp/'
   \| 
   =link_to 'Tweetlr', 'http://agiledesigncamp.tumblr.com'
   \|
-  =link_to 'Email', 'mailto:orga_at_agiledesigncamp.org'
+  =link_to 'Email', 'mailto:orga@agiledesigncamp.org'
   
-.tile2.exp#team
+.tile.tile2.exp#team
   %h2 Team
   .content
     %p
       The Camp is organized by #{link_to 'Rike Schmiedebach', 'http://twitter.com/miss_r_e'}, #{link_to 'Sven Kräuter', 'http://makingthingshappen.de/'}, #{link_to 'Liron Tocker', 'http://liron.de'}, #{link_to 'Matthias Bauer', 'http://moeffju.net'} and #{link_to 'Fabian Fabian', 'http://fabianfabian.net'}.
 
-.tile2#sessions.exp
+.tile.tile2#sessions.exp
   %h2 Sessions
   .content
     %p
       Can you hold a session?
-      =link_to 'Tell us about it', 'mailto:orga_at_agiledesigncamp.org?subject=Sessionidea'
+      =link_to 'Tell us about it', 'mailto:orga@agiledesigncamp.org?subject=Sessionidea'
       and we will put it right here.
 
-.tile2.exp#kids
+.tile.tile2.exp#kids
   %h2 Got kids? We got day care!
   .content
     %p 
       Just 
-      =link_to 'tell us how many and what age', 'mailto:orga_at_agiledesigncamp.org?subject=About that day care at the Agile Design Camp'
+      =link_to 'tell us how many and what age', 'mailto:orga@agiledesigncamp.org?subject=About that day care at the Agile Design Camp'
       they are.
 
-.tile4#sponsors
+.tile.tile4#sponsors
   %h2 Sponsors
   = partial '/content/sponsors'
 
   %p
-    =link_to 'Want to sponsor, too?', 'mailto:orga_at_agiledesigncamp.org?subject=sdsd&body=Hi'
+    =link_to 'Want to sponsor, too?', 'mailto:orga@agiledesigncamp.org?subject=sdsd&body=Hi'
+
+
+.copy.tile.tile2.normal.exp#what-is-agile
+  %h2 what is agile?
+  .content
+    = partial '/content/what-is-agile'
+
+.copy.tile.tile2.normal.exp#all-of-us
+  %h2 it's about all of us!
+  .content
+    %p When it comes to Agile, the case seems to be clear: It's on everyone's lips. Everyone has an idea what it's about. We all love the attitude. We all believe we practice – at least tiny bits – of it in our day-to-day work life. However, surprisingly few work teams thoroughly live and breathe agile. Especially when it comes to the areas of concept and design, the waterfall is dripping down our processes. 
+
+
+.copy.tile.tile2.normal.exp
+  %h2 what is a barcamp?
+  .content
+    = partial '/content/barcamp'
+
+.copy.tile.tile2.normal.exp
+  %h2 Who should join?
+  .content
+    = partial '/content/join'

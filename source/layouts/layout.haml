@@ -4,7 +4,7 @@
   %body{:class => page_classes}
     %header
       = partial '/partials/header'  
-    %section(role="content")
+    %section#main(role="content")
       = yield
     .clear
     %footer
